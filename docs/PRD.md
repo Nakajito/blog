@@ -1,0 +1,68 @@
+# Documento de Requerimientos (PRD - Product Requirements Document)
+
+## Alcance y Definición del MVP
+
+### Objetivo del Proyecto
+1. **Objetivo del Proyecto.**
+
+    Crear un blog personal dinámico utilizando Python y Reflex que sirva como pieza central de un portafolio profesional. El sistema debe demostrar competencias en desarrollo Full-Stack, diseño de bases de datos y despliegue de aplicaciones.
+
+2. **Definición del MVP (Producto Mínimo Viable)**
+
+    Para la versión 1.0, nos centraremos en lo esencial para que el producto sea funcional y desplegable. Todo lo demás se moverá al "Backlog" para futuras versiones.
+
+    **A. Funcionalidades "Core" (Must-Have).**
+
+    Estas son obligatorias para lanzar:
+
+    1. Vista Pública (Frontend):
+    
+        - Landing Page: Presentación breve (Hero section) + Listado de últimos artículos.
+
+        - Blog Feed: Lista paginada de todos los artículos con filtrado simple (por categoría).
+
+        - Post View: Página dinámica para leer un artículo individual. Debe renderizar Markdown a HTML (para código, negritas, listas, imágenes).
+
+        - Sobre Mí: Página estática con tu CV resumido y enlaces a redes.
+
+    2. Gestión de Contenido (Backend/Admin):
+
+        Panel de Administración Básico protegido por contraseña:
+
+        - Crear/Editar posts (Título, Slug, Contenido Markdown, Imagen de portada).
+
+        - Publicar/Borrador (estado del post).
+
+    **B. Funcionalidades "Nice-to-Have" (V2 - Backlog).**
+
+    - Comentarios (requiere mucha moderación/auth).
+
+    - Modo oscuro/claro (Reflex lo trae nativo, pero ajustar estilos personalizados toma tiempo).
+
+    - Buscador avanzado (Full-text search).
+
+    - Analytics propio.
+
+3. **Decisión Técnica Crítica: Estrategia de Datos.**
+
+    Database - "Blog Dinámico": Los posts se guardan en una base de datos (SQLite/Postgres).
+4. **Historias de Usuario (User Stories).**
+    
+    - Como visitante, quiero ver una lista de artículos ordenados por fecha para leer el contenido más reciente.
+    
+    - Como visitante, quiero ver fragmentos de código con resaltado de sintaxis (syntax highlighting) dentro de los artículos para entender los ejemplos técnicos.
+
+    - Como administrador, quiero poder escribir mis posts en formato Markdown y guardarlos en la base de datos para no depender de editar código fuente para publicar.
+
+5. **Stack Tecnológico Definido**
+    - Lenguaje: Python 3.10+
+
+    - Framework Web: Reflex (Full stack).
+
+    - ORM: SQLModel (Nativo en Reflex).
+
+    - DB: SQLite (Desarrollo) / PostgreSQL (Producción).
+
+    - Renderizado de Texto: Componente rx.markdown de Reflex.
+
+    - Control de Versiones: Git + GitHub.
