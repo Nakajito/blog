@@ -265,8 +265,27 @@
 
     - `blog/state/`: El cerebro de la aplicación. Aquí van las funciones Python (`def save_post(...)`, `def load_posts(...)`). Reflex separa la UI (`pages`) de la lógica (`state`).
 
+## **Desarrollo**
 
+**Configuración de la Base de Datos (Modelos)**
 
+Definimos la estructura de los datos. Reflex usa SQLModel bajo la capa, lo que nos permite definir tablas como clases de Python.
+
+Archivo: `blog/models/post.py`
+```python
+import reflex as rx
+from datetime import datetime
+from sqlmodel import Field, Relationship
+from typing import List, Optional
+```
+
+reflex: Framework para crear aplicaciones web full-stack en Python
+
+datetime: Para manejar fechas y horas
+
+SQLModel: ORM que combina Pydantic y SQLAlchemy
+
+typing: Para tipado estático (List, Optional)
 
 
 
