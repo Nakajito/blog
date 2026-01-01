@@ -1,8 +1,22 @@
-.web
-assets/external/
+# Byte-compiled / optimized / DLL files
 __pycache__/
-.states
 *.py[cod]
-*.db
+*$py.class
+
+# Virtual Environment
 .venv/
+venv/
+ENV/
+
+# Reflex specific
 .web/
+reflex.db
+*.db
+
+# Environment variables (SEGURIDAD EXTREMA: Nunca subir esto)
+.env
+
+# Editor directories
+.idea/
+.vscode/
+*.swp
