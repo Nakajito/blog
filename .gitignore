@@ -12,6 +12,7 @@ ENV/
 .web/
 reflex.db
 *.db
+.states/
 
 # Environment variables (SEGURIDAD EXTREMA: Nunca subir esto)
 .env
