@@ -92,7 +92,6 @@ def navbar() -> rx.Component:
                 align_items="center",
             ),
         ),
-        bg=main_colors["background_primary"],
         padding="1em",
         # position="fixed",
         # top="0px",

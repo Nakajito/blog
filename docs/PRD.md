@@ -201,7 +201,7 @@
     |                      [ rx.container ]                         |
     |                                                               |
     |                  [ rx.avatar (Círculo) ]                      |
-    |           [ rx.heading: Hola, soy Daniel Bonilla ]            |
+    |           [ rx.heading: Hola, soy ... ]            |
     |       [ rx.text: Ingeniero TI & Dev Full-Stack... ]           |
     |          [ (O) GitHub ]   [ (in) LinkedIn ]   [ (X) ]         |
     |                                                               |
